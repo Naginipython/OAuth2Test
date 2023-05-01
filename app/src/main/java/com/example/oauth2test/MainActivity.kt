@@ -29,8 +29,8 @@ class MainActivity : AppCompatActivity() {
     private var accessToken: String = ""
     private var oauthVerifier: String = ""
     //NOTE: Function ONLY RETURNS A STRING of my personal MyAnimeAPI Client ID. You can get your own, by going to:
-    //MyAnimeList.net -> login -> Click Username -> Account Seetings -> API (top bar) -> create
-    private val oauthClientId = MyAnimeListAPIClientId().getClientId()
+    //MyAnimeList.net -> login -> Click Username -> Account Settings -> API (top bar) -> create
+    private val oauthClientId: String = MyAnimeListAPIClientId().getClientId()
 
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
